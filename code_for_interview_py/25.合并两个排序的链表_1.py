@@ -3,6 +3,8 @@ class ListNode:
     def __init__(self, x):
         self.val = x
         self.next = None
+
+
 class Solution:
     # 返回合并后列表
     def Merge(self, pHead1, pHead2):
@@ -17,7 +19,7 @@ class Solution:
             else:
                 pHead.next = pHead1
                 pHead1 = pHead1.next
-            pHead=pHead.next
+            pHead = pHead.next
 
         if pHead1 is None:
             pHead.next = pHead2

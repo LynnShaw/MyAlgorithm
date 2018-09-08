@@ -14,4 +14,4 @@ class Solution:
         if exponent % 2 != 0:
             result *= base
         return (result if isneg == 1 else 1/result)
-#return base**exponent
+# return base**exponent
