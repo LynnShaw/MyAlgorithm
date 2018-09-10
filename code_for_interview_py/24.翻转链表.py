@@ -13,6 +13,6 @@ class Solution:
             return pHead
         next = pHead.next
         pHead.next = None
-        newHead = self.ReverseList(next)
+        newHead = self.ReverseList(next) # 递归调用到最深处即旧链表的尾部
         next.next = pHead
-        return newHead   # 新链表的尾
+        return newHead   # 新链表的头，即旧链表的尾
